@@ -397,6 +397,14 @@
       drawConnections();
     }
   });
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    const elements = document.querySelectorAll('.bg-1, .bg-2-1, .bg-2-2, .node-footer, .connection, .connection-2, .connection-footer');
+    elements.forEach(element => {
+      element.style.animation = 'none';
+    });
+  }
+
 </script>
 
   </body>
