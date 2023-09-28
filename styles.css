@@ -552,11 +552,11 @@ h3,
 @media only screen and (max-width: 768px) {
   .bg-1,
   .bg-2-1,
-  .bg2-2,
+  .bg-2-2,
   .node-footer,
   .connection,
   .connection-2,
   .connection-footer {
-    animation: none;
+    animation: none !important;
   }
 }
