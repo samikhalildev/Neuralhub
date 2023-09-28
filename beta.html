@@ -179,7 +179,11 @@
 
         drawNetwork();
 
-        window.addEventListener("resize", drawNetwork); // Adjust the network's position when the window size changes
+        window.addEventListener("resize", function () {
+          if (window.innerWidth > 768) {
+            drawNetwork();
+          }
+        });
       });
     </script>
   </body>

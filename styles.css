@@ -549,7 +549,7 @@ h3,
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .bg-1,
   .bg-2-1,
   .bg2-2,

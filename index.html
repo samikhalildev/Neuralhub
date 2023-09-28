@@ -392,7 +392,11 @@
   drawConnections();
 
   // Redraw connections on window resize
-  window.addEventListener('resize', drawConnections);
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) { 
+      drawConnections();
+    }
+  });
 </script>
 
   </body>
