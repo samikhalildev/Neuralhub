@@ -89,3 +89,10 @@ button:hover {
     stroke-dashoffset: -200;
   }
 }
+
+@media (max-width: 668px) {
+  #neural-network line {
+    stroke-dasharray: 1000;
+    animation: none;
+  }
+}

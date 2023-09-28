@@ -547,3 +547,15 @@ h3,
     padding: 150px 50px;
   }
 }
+
+@media (max-width: 668px) {
+  .bg-1,
+  .bg-2-1,
+  .bg2-2,
+  .node-footer,
+  .connection,
+  .connection-2,
+  .connection-footer {
+    animation: none;
+  }
+}
