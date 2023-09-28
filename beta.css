@@ -93,6 +93,6 @@ button:hover {
 @media only screen and (max-width: 768px) {
   #neural-network line {
     stroke-dasharray: 1000;
-    animation: none;
+    animation: none !important;
   }
 }

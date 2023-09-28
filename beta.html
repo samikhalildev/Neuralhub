@@ -185,6 +185,13 @@
           }
         });
       });
+
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        const elements = document.querySelectorAll("#neural-network line");
+        elements.forEach((element) => {
+          element.style.animation = "none";
+        });
+      }
     </script>
   </body>
 </html>
