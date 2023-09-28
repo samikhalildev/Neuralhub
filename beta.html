@@ -21,49 +21,61 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const svg = document.getElementById("neural-network");
-        const layers = [16, 2, 4, 8, 16, 16, 16, 8, 4, 2, 16]; // Number of nodes in each layer
-        // const layers = [1, 2, 4, 8, 16, 6, 16, 8, 4, 2, 1]; // Number of nodes in each layer
-        const nodeRadius = 30; // Adjust the radius of the nodes
-        const vSpace = 40; // Adjust the vertical space between nodes
-        const hSpace = 120; // Adjust the horizontal space between layers
+        const layers = [16, 2, 4, 8, 16, 16, 16, 8, 4, 2, 16];
+        const nodeRadius = 30;
+        const vSpace = 60;
+        const hSpace = 160;
 
-        let x = hSpace;
-        layers.forEach((layerSize, layerIndex) => {
-          let y = (window.innerHeight - (layerSize - 1) * vSpace) / 2;
-          for (let i = 0; i < layerSize; i++) {
-            const circle = document.createElementNS(
-              "http://www.w3.org/2000/svg",
-              "circle"
-            );
-            circle.setAttribute("cx", x);
-            circle.setAttribute("cy", y);
-            circle.setAttribute("r", nodeRadius);
-            svg.appendChild(circle);
-
-            if (layerIndex < layers.length - 1) {
-              const nextLayerSize = layers[layerIndex + 1];
-              const nextX = x + hSpace;
-              let nextY =
-                (window.innerHeight - (nextLayerSize - 1) * vSpace) / 2;
-              for (let j = 0; j < nextLayerSize; j++) {
-                const line = document.createElementNS(
-                  "http://www.w3.org/2000/svg",
-                  "line"
-                );
-                line.setAttribute("x1", x);
-                line.setAttribute("y1", y);
-                line.setAttribute("x2", nextX);
-                line.setAttribute("y2", nextY);
-                line.setAttribute("stroke", "#727272");
-                svg.appendChild(line);
-                nextY += vSpace;
-              }
-            }
-
-            y += vSpace;
+        function drawNetwork() {
+          // Clear existing nodes and lines
+          while (svg.firstChild) {
+            svg.removeChild(svg.lastChild);
           }
-          x += hSpace;
-        });
+
+          const totalWidth = hSpace * (layers.length - 1);
+          let x = (window.innerWidth - totalWidth) / 2; // Center the network
+
+          layers.forEach((layerSize, layerIndex) => {
+            let y = (window.innerHeight - (layerSize - 1) * vSpace) / 2;
+            for (let i = 0; i < layerSize; i++) {
+              const circle = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "circle"
+              );
+              circle.setAttribute("cx", x);
+              circle.setAttribute("cy", y);
+              circle.setAttribute("r", nodeRadius);
+              svg.appendChild(circle);
+
+              if (layerIndex < layers.length - 1) {
+                const nextLayerSize = layers[layerIndex + 1];
+                const nextX = x + hSpace;
+                let nextY =
+                  (window.innerHeight - (nextLayerSize - 1) * vSpace) / 2;
+                for (let j = 0; j < nextLayerSize; j++) {
+                  const line = document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "line"
+                  );
+                  line.setAttribute("x1", x);
+                  line.setAttribute("y1", y);
+                  line.setAttribute("x2", nextX);
+                  line.setAttribute("y2", nextY);
+                  line.setAttribute("stroke", "#727272");
+                  svg.appendChild(line);
+                  nextY += vSpace;
+                }
+              }
+
+              y += vSpace;
+            }
+            x += hSpace;
+          });
+        }
+
+        drawNetwork();
+
+        window.addEventListener("resize", drawNetwork); // Adjust the network's position when the window size changes
       });
     </script>
   </body>
