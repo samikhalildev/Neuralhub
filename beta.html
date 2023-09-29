@@ -186,12 +186,14 @@
         });
       });
 
-      if (window.matchMedia("(max-width: 768px)").matches) {
-        const elements = document.querySelectorAll("#neural-network line");
-        elements.forEach((element) => {
-          element.style.animation = "none";
-        });
-      }
+      setTimeout(function () {
+        if (window.innerWidth < 1000) {
+          const elements = document.querySelectorAll("#neural-network line");
+          elements.forEach((element) => {
+            element.style.animation = "none";
+          });
+        }
+      }, 500);
     </script>
   </body>
 </html>
