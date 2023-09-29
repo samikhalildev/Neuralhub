@@ -30,7 +30,6 @@ html {
 
 .logo-img {
   width: 300px;
-  margin-bottom: 15px;
 }
 
 h3 {
@@ -97,13 +96,14 @@ button:hover {
   }
 
   .beta-form-container {
-    padding: 25px;
+    padding: 25px 50px;
     width: 50%;
     max-width: 100%;
   }
 
   .logo-img {
-    width: 180px;
+    width: 225px;
+    margin-bottom: 10px;
   }
 
   #mc_embed_signup {
