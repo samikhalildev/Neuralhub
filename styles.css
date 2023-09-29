@@ -563,6 +563,10 @@ img {
     animation: none !important;
   }
 
+  .stage-details {
+    height: 300px;
+  }
+
   .network {
     display: none !important;
   }
