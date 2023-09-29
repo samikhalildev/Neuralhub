@@ -559,6 +559,15 @@ img {
     animation: none !important;
   }
 
+  .logo {
+    width: 125px;
+    margin-left: 25px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
   .stage {
     display: block;
   }

@@ -92,8 +92,8 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
   #neural-network line {
-    /* stroke-dasharray: 300; */
-    /* animation: dash 30s ease-in-out infinite; */
+    stroke-dasharray: 1;
+    animation: none !important;
   }
 
   .beta-form-container {
