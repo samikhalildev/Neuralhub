@@ -5,6 +5,7 @@
     <title>Neuralhub</title>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="beta.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <svg id="neural-network" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -180,20 +181,20 @@
         drawNetwork();
 
         window.addEventListener("resize", function () {
-          if (window.innerWidth > 768) {
-            drawNetwork();
-          }
+          // if (window.innerWidth > 768) {
+          drawNetwork();
+          // }
         });
       });
 
-      setTimeout(function () {
-        if (window.innerWidth < 1000) {
-          const elements = document.querySelectorAll("#neural-network line");
-          elements.forEach((element) => {
-            element.style.animation = "none";
-          });
-        }
-      }, 500);
+      // setTimeout(function () {
+      //   if (window.innerWidth < 1000) {
+      //     const elements = document.querySelectorAll("#neural-network line");
+      //     elements.forEach((element) => {
+      //       element.style.animation = "none";
+      //     });
+      //   }
+      // }, 500);
     </script>
   </body>
 </html>

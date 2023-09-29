@@ -92,7 +92,34 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
   #neural-network line {
-    stroke-dasharray: 1000;
-    animation: none !important;
+    /* stroke-dasharray: 1000; */
+    /* animation: none !important; */
+  }
+
+  .beta-form-container {
+    padding: 25px;
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .logo-img {
+    width: 180px;
+  }
+
+  #mc_embed_signup {
+    padding: 0px !important;
+  }
+
+  #mc_embed_signup form {
+    margin: 10px !important;
+  }
+
+  #mc_embed_signup h2 {
+    margin: 4px 0px !important;
+    font-size: 1.1em !important;
+  }
+
+  #mc_embed_signup .mc-field-group {
+    margin-top: 18px !important;
   }
 }

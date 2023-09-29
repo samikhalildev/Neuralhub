@@ -4,6 +4,7 @@
     <title>Neuralhub</title>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <section id="header">
@@ -115,9 +116,9 @@
         </p>
         <p class="text-dark">
           Construct a neural network, tune it's parameters,
-          visually see the AI learning in real-time, without writting a single line of code.<br />
-          Neuralhub puts you in control, all in a simple interface, eliminating
-          the need for a dedicated AI team or complex infrastructure.
+          visually see the AI learning in real-time, without writting a single line of code.
+          <p class="text-dark"> Neuralhub puts you in control, all in a simple interface, eliminating
+            the need for a dedicated AI team or complex infrastructure. </p>
         </p>
       </div>
     </section>
@@ -253,7 +254,7 @@
       </div>
     </div> -->
 
-        <div class="network network-footer">
+      <div class="network network-footer">
         <div class="layer input-layer" id="connection-3">
           <div class="node node-footer" id="i1"></div>
 
@@ -273,7 +274,6 @@
             <div class="node large-node" id="net-footer-i2"></div>
             <div class="node large-node" style="opacity: 0.5; border-color: black;" id="net-footer-i3"></div>
             
-          <!-- <div class="layer hidden-layer" id="connection-footer"> -->
             <div class="node large-node" id="net-footer-h1"></div>
 
           <div class="layer output-layer" id="connection-footer">
@@ -389,7 +389,9 @@
   }
 
   // Draw connections initially
-  drawConnections();
+  if (window.innerWidth > 668) { 
+    drawConnections();
+  }
 
   // Redraw connections on window resize
   window.addEventListener('resize', function() {

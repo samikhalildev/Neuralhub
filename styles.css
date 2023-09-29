@@ -455,6 +455,9 @@ h3,
   color: #727272;
   margin-bottom: -5px;
 }
+img {
+  max-width: 100%;
+}
 
 #the-what {
   position: relative;
@@ -545,6 +548,7 @@ h3,
   #the-details,
   #the-mission {
     padding: 150px 50px;
+    margin-left: 0px;
   }
 }
 
@@ -557,5 +561,38 @@ h3,
   .connection-2,
   .connection-footer {
     animation: none !important;
+  }
+
+  .network {
+    display: none !important;
+  }
+
+  .layer {
+    margin: 0px !important;
+  }
+
+  #header {
+    height: 700px;
+  }
+
+  .mobile-space {
+    margin-top: 20px;
+  }
+
+  .content {
+    margin-top: 150px;
+  }
+
+  #the-what {
+    height: 400px;
+  }
+
+  #footer {
+    padding: 25px;
+    height: 450px;
+  }
+
+  .stage4-graphic img {
+    margin-left: 0px;
   }
 }
