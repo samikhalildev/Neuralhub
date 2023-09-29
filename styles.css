@@ -534,10 +534,6 @@ img {
     margin: 120px 50px;
   }
 
-  .stage {
-    display: block;
-  }
-
   .stage-right {
     text-align: center;
     margin-left: 0px;
@@ -563,6 +559,10 @@ img {
     animation: none !important;
   }
 
+  .stage {
+    display: block;
+  }
+
   .stage-details {
     height: 300px;
   }
@@ -584,7 +584,16 @@ img {
   }
 
   .content {
-    margin-top: 150px;
+    display: block;
+    margin-top: 219px;
+  }
+
+  .neuralhub-right-graphic {
+    display: none;
+  }
+
+  .sub-title {
+    margin-right: 75px;
   }
 
   #the-what {
