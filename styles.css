@@ -310,7 +310,7 @@ h3 {
 }
 
 .left {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .right img {
@@ -319,9 +319,9 @@ h3 {
 }
 
 .neuralhub-right-graphic {
-  margin-top: -200px;
+  margin-top: -150px;
   opacity: 0.7;
-  /* width: 800px; */
+  width: 700px;
   height: auto;
 }
 
@@ -531,7 +531,6 @@ img {
 
   .neuralhub-right-graphic {
     opacity: 1;
-    margin-top: 0px;
   }
 
   .node {
