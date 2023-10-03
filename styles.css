@@ -17,10 +17,6 @@ html {
   font-family: system-ui;
 }
 
-html {
-  background-color: black;
-}
-
 body {
   background-color: #f4f4f4;
 }
@@ -222,11 +218,19 @@ section {
 }
 
 .content {
-  margin-top: 250px;
-  margin-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-left: 150px;
+  max-width: 1400px; /* You can adjust this value based on your preference */
+  margin: 250px auto;
+  padding: 0 50px;
+}
+
+.container {
+  max-width: 1800px; /* You can adjust this value based on your preference */
+  margin: 0 auto; /* This will center the container */
+  padding: 0 20px; /* This will add some padding on smaller screens */
 }
 
 .title {
@@ -243,10 +247,10 @@ h3 {
   font-size: 1.5em;
 }
 
-.container {
-  /* width: 50%; */
-  /* margin: 0 auto;  */
-}
+/* .container {
+  width: 50%;
+  margin: 0 auto; 
+} */
 
 .text-dark {
   color: #323232;
@@ -296,7 +300,7 @@ h3 {
   background-color: black;
   color: white;
   text-align: center;
-  height: 300px;
+  height: 700px;
   padding: 150px;
   padding-top: 235px;
 }
@@ -327,10 +331,15 @@ h3 {
 
 .neuralhub-top-graphic {
   display: inline;
-  top: 200px;
+
+  top: -300px;
+  left: -70px;
+  position: relative;
+
+  /* top: 200px;
   left: -60px;
-  position: absolute;
-  opacity: 0.3;
+  position: absolute; */
+  opacity: 0.2;
 }
 
 .zoomed-in-video {
@@ -525,6 +534,10 @@ img {
 }
 
 @media (max-width: 1268px) {
+  .content {
+    padding-left: 25px;
+  }
+
   .stage-btn {
     width: 100%;
   }
@@ -618,5 +631,16 @@ img {
 
   .stage4-graphic img {
     margin-left: 0px;
+  }
+
+  .neuralhub-top-graphic {
+    top: 200px;
+    left: -60px;
+    position: absolute;
+    opacity: 0.3;
+  }
+
+  #the-mission {
+    height: 450px;
   }
 }
