@@ -291,7 +291,7 @@ h3 {
 #the-what,
 #the-details,
 #the-mission {
-  padding: 150px 100px;
+  padding: 150px 75px;
   height: 250px;
   margin-left: 50px;
 }
@@ -351,6 +351,10 @@ h3 {
 .stage4-graphic img {
   width: 500px;
   margin-top: -50px;
+}
+
+.stage2-graphic img {
+  margin-right: -5px;
 }
 
 .stage4-graphic img {
@@ -507,7 +511,7 @@ img {
 }
 
 .stage-details {
-  height: 200px;
+  height: 150px;
 }
 
 .stage-btn {
@@ -592,7 +596,7 @@ img {
   }
 
   .stage-details {
-    height: 300px;
+    height: 250px;
   }
 
   .network {
@@ -643,4 +647,13 @@ img {
   #the-mission {
     height: 450px;
   }
+}
+
+.app-screenshot {
+  transform: rotateX(10deg);
+  transform-origin: bottom;
+  box-shadow: #0000, 0 0 #0000, #0000, 0 0 #0000,
+    0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  height: auto;
 }
