@@ -617,7 +617,7 @@ img {
 
   .content {
     display: block;
-    margin-top: 110px;
+    margin-top: 155px;
   }
 
   .neuralhub-right-graphic {
@@ -638,7 +638,7 @@ img {
   }
 
   .neuralhub-top-graphic {
-    top: 80px;
+    top: 125px;
     left: -60px;
     position: absolute;
     opacity: 0.3;
