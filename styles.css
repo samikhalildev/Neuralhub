@@ -625,7 +625,7 @@ img {
   }
 
   #the-what {
-    height: 400px;
+    height: auto !important;
   }
 
   #footer {
@@ -645,7 +645,7 @@ img {
   }
 
   #the-mission {
-    height: 450px;
+    height: auto !important;
   }
 }
 
