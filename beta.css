@@ -52,7 +52,7 @@ input[type="email"] {
   width: 250px;
 }
 
-button {
+.button {
   padding: 12px 20px;
   background: #444444;
   color: #fff;
@@ -63,7 +63,7 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+.button:hover {
   background: #343434;
 }
 
@@ -116,7 +116,7 @@ button:hover {
 
   #mc_embed_signup h2 {
     margin: 4px 0px !important;
-    font-size: 1.1em !important;
+    font-size: 1.2em !important;
   }
 
   #mc_embed_signup .mc-field-group {
