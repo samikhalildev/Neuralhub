@@ -10,7 +10,7 @@
 
       gtag('config', 'G-7159SRC1VK');
     </script>
-    <title>Neuralhub </title>
+    <title>Neuralhub</title>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -340,6 +340,14 @@
     </section>
 
     <script>
+      window.addEventListener('blur', () => {
+        document.title = " :(";
+      });
+
+      window.addEventListener('focus', () => {
+        document.title = "Neuralhub";
+      });
+
       document.addEventListener('DOMContentLoaded', function() {
           const buttons = document.querySelectorAll('.stage-btn');
           

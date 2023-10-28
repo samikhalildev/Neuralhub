@@ -140,6 +140,14 @@
       </div>
     </div>
     <script>
+      window.addEventListener("blur", () => {
+        document.title = "Come back :(";
+      });
+
+      window.addEventListener("focus", () => {
+        document.title = "Neuralhub | Beta";
+      });
+
       document.addEventListener("DOMContentLoaded", function () {
         const svg = document.getElementById("neural-network");
         const layers = [16, 2, 4, 8, 16, 16, 16, 8, 4, 2, 16];
