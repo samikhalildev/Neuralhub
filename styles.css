@@ -159,14 +159,11 @@ section {
   /* background: linear-gradient(90deg, #271f1f, #292634, #0d0b0b); */
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav-wrapper {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   /* background-color: #131313; */
   z-index: 1000;
   padding: 10px;
@@ -181,9 +178,16 @@ section {
   ); */
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 5px auto;
+}
+
 .logo {
   width: 200px;
-  margin-left: 50px;
 }
 
 .demo-button {
@@ -550,6 +554,10 @@ img {
 }
 
 @media (max-width: 1268px) {
+  .logo {
+    margin-left: 25px;
+  }
+
   .content {
     padding-left: 25px;
   }
