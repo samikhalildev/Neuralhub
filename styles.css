@@ -689,6 +689,7 @@ img {
 
 .nav-links {
   margin-right: 20px;
+  margin-top: 3px;
 }
 
 .nav-link {
@@ -721,6 +722,7 @@ img {
 /* Optional: To space out the sign-up button from the links */
 .nav-btn {
   margin-left: 15px;
+  margin-top: 0px;
 }
 
 .signup-button {
