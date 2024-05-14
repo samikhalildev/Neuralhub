@@ -32,7 +32,7 @@
               <a href="#the-details" class="nav-link hide-on-mobile">How</a>
               <a href="#the-mission" class="nav-link hide-on-mobile">Mission</a>
               <a href="mailto:sam@neuralhub.ai" class="nav-link hide-on-mobile">Contact</a>
-              <a class="link nav-btn" href="https://app.neuralhub.ai/">
+              <a class="link nav-btn" href="javascript:void(0);" onclick="navigateToApp()">
                 <button class="signup-button">Try now</button>
               </a>
             </div>
@@ -48,7 +48,7 @@
               A playground for deep learning experimentation.
             </p>
             <div class="header-action-button">
-              <a class="link" href="https://app.neuralhub.ai/">
+              <a class="link" href="javascript:void(0);" onclick="navigateToApp()">
                 <button style="position: absolute;" class="signup-button">Try now</button>
               </a>
               <a style="margin-left: 115px; margin-top: -3px;" class="link" href="https://www.producthunt.com/posts/neuralhub?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-neuralhub" target="_blank">
@@ -292,7 +292,7 @@
         its launched
       </p> -->
       
-      <a href="https://app.neuralhub.ai/">
+      <a href="javascript:void(0);" onclick="navigateToApp()">
         <button class="demo-button">Try now</button>
       </a>
     </section>
@@ -330,6 +330,9 @@
           });
       });
   </script>
+  
+<script src="tracker.js"></script>
+
 <script>
   function getNodesFromLayer(layer) {
       return Array.from(layer.children).map(node => node);
